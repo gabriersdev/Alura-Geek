@@ -1,0 +1,134 @@
+.rodape{
+  display: block;
+}
+
+.rodape__principal{
+  height: 100%;
+  padding: 2rem var(--tamanho-margem-exibicao);
+  background-color: var(--azul-clarissimo);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.rodape__lista{
+  display: flex;
+  align-items: center;
+}
+
+.rodape__lista .lista{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rodape__lista .lista__item{
+  display: block;
+  margin: 0;
+}
+
+.rodape__lista .lista__item__link:hover{
+  text-decoration: underline;
+}
+
+.rodape__contato{
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  flex-flow: row wrap;
+}
+
+.rodape__contato__titulo{
+  font-size: 1rem;
+  width: 100%;
+}
+
+.rodape__contato__descricao-input{
+  margin: 0.5rem 0;
+  display: inline;
+}
+
+.rodape__contato__input{  
+
+  width: 100%;
+  padding: 1rem 0.75rem;
+  border: none;
+  border-bottom: 3px solid #808080;
+  border-radius: 0.25rem 0.25rem 0 0;
+  margin-bottom: 0.5rem;
+}
+
+.rodape__contato__input:last-child{
+  margin-bottom: 0;
+}
+
+.rodape__contato__input:focus{
+  box-shadow: none;
+  border-color: var(--azul);
+}
+
+.rodape__contato__botao{
+  margin-top: 0.5rem;
+  background-color: var(--azul);
+  border: 1px solid var(--azulo);
+  color: var(--branco);
+  padding: 0.75rem 1.75rem;
+  cursor: pointer;
+}
+
+.rodape__contato__botao:hover{
+  background-color: var(--azul-50);
+  border-color: var(--azul-50);
+}
+
+.rodape__tarja{
+  padding: 1rem var(--tamanho-margem-exibicao);
+
+  background-color: var(--cor-da-tarja-rodape);
+  color: var(--cor-de-texto);
+
+  text-align: center;
+  line-height: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .rodape__tarja{
+    margin-top: 0;
+    padding: 2rem 2rem;
+  }
+
+  .rodape__tarja__creditos{
+    line-height: 1.25;
+  }
+  
+  .rodape__tarja__creditos{
+    margin-bottom: 1rem;
+  }
+
+  .rodape__tarja__creditos:last-child{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .rodape__principal{
+    flex-direction: column;
+  }
+
+  .rodape__lista  .lista__item{
+    margin: 0.25rem 0;
+  }
+
+  .rodape__contato{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px){
+
+}
