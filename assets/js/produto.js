@@ -29,7 +29,7 @@ import { URLPaginaErro } from "./modulos/utilitarios.js";
         break;
     }
 
-    const dadosProduto = categoria[idGET];
+    const dadosProduto = categoria !== null ? categoria[idGET] : undefined;
     const ehValido = (dadosProduto !== undefined) && categoria !== null;
 
     if(ehValido){

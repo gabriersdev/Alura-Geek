@@ -8,6 +8,7 @@
 
 @import url(./componentes/botoes.css);
 @import url(./componentes/form-grupos.css);
+@import url(./componentes/alert.css);
 
 @import url(./elementos/menu.css);
 @import url(./elementos/logo.css);
@@ -22,10 +23,7 @@ body{
   font-family: 'Inter Tight', sans-serif;
   background-color: var(--cor-de-fundo);
   color: var(--preto);
-}
-
-*{
-  transition: 0.3s;
+  font-size: 1.1rem;
 }
 
 :focus{
@@ -43,6 +41,7 @@ body{
 
 a, button{
   cursor: pointer;
+
 }
 
 .link-visivel{
