@@ -1,5 +1,4 @@
 import { converterParaMesBRL, controlarModal } from "./modulos/utilitarios.js";
-import { carregarProdutosHome } from "./modulos/carregar-exibicao.js";
 
 (() => 
 {
@@ -19,7 +18,6 @@ import { carregarProdutosHome } from "./modulos/carregar-exibicao.js";
   })
 
   controlarModal();
-  carregarProdutosHome();
 
 })();
 

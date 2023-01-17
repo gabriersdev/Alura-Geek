@@ -6,6 +6,8 @@
 @import url(no-script.css);
 @import url(modal.css);
 
+@import url(./componentes/botoes.css);
+
 @import url(./elementos/menu.css);
 @import url(./elementos/logo.css);
 @import url(./elementos/cabecalho.css);

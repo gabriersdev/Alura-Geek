@@ -53,7 +53,7 @@ const criarSecaoProdutosHome = (nomeSecao, cards) => {
   titulo.textContent = nomeSecao;
 
   const link = document.createElement('a');
-  link.href = '#';
+  link.href = './todos-produtos.html';
   link.classList.add('produtos__cabecalho__botao');
   link.innerHTML += `Ver tudo <i class="bi bi-arrow-right"></i>`;
   

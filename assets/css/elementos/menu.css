@@ -38,18 +38,11 @@
 }
 
 .menu__botao{
-  background-color: transparent;
-  border: 1px solid var(--azul);
-  color: var(--azul);
-  padding: 0.75rem 1.75rem;
-  cursor: pointer;
-  text-align: center;
+  /* Estilização no diretório de componentes */
 }
 
 .menu__botao:hover{
-  color: var(--azul);
-  border-color: var(--azul);
-  background-color: var(--azul-clarissimo);
+  /* Estilização no diretório de componentes */
 }
 
 @media screen and (min-width: 0) and (max-width: 767px) {
