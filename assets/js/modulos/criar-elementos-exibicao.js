@@ -2,8 +2,13 @@ import { converterValor } from './utilitarios.js';
 
 const criarCardProdutosExibicaoHome = (dados, {categoriaURL, index}) => {
 
+  const URL = `./produto.html?categoria=${categoriaURL}&id=${index}`;
+
   const itemLista = document.createElement('li');
   itemLista.classList.add('lista__item');
+
+  const link = document.createElement('a');
+  link.href = URL;
 
   const figure = document.createElement('figure');
   figure.classList.add('lista__item__figura');
@@ -27,18 +32,19 @@ const criarCardProdutosExibicaoHome = (dados, {categoriaURL, index}) => {
   figurecaption.appendChild(span);
 
 
-  const link = document.createElement('a');
-  link.href = `./produto.html?categoria=${categoriaURL}&id=${index}`;
-  link.classList.add('lista__item__figura__botao');
-  link.textContent = 'Ver produto';
+  const linkBotao = document.createElement('a');
+  linkBotao.href = URL;
+  linkBotao.classList.add('lista__item__figura__botao');
+  linkBotao.textContent = 'Ver produto';
 
   figure.appendChild(img);
   figure.appendChild(figurecaption);
-  figure.appendChild(link);
+  figure.appendChild(linkBotao);
 
   itemLista.appendChild(figure);
+  link.appendChild(itemLista)
 
-  return itemLista;
+  return link;
 }
 
 const criarSecaoProdutos = (nomeSecao, cards) => {
@@ -53,13 +59,13 @@ const criarSecaoProdutos = (nomeSecao, cards) => {
   titulo.classList.add('produtos__cabecalho__titulo');
   titulo.textContent = nomeSecao;
 
-  const link = document.createElement('a');
-  link.href = './todos-produtos.html';
-  link.classList.add('produtos__cabecalho__botao');
-  link.innerHTML += `Ver tudo <i class="bi bi-arrow-right"></i>`;
+  const linkBotao = document.createElement('a');
+  linkBotao.href = './todos-produtos.html';
+  linkBotao.classList.add('produtos__cabecalho__botao');
+  linkBotao.innerHTML += `Ver tudo <i class="bi bi-arrow-right"></i>`;
   
   cabecalhoProdutos.appendChild(titulo);
-  cabecalhoProdutos.appendChild(link);
+  cabecalhoProdutos.appendChild(linkBotao);
 
 
   const listaProdutos = document.createElement('div');

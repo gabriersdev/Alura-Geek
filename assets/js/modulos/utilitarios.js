@@ -39,8 +39,11 @@ const controlarModal = () => {
   });
 }
 
+const URLPaginaErro = './erro.html';
+
 export{
   converterParaMesBRL,
   controlarModal,
-  converterValor
+  converterValor,
+  URLPaginaErro
 }

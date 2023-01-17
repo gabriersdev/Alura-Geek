@@ -1,5 +1,6 @@
 import { carregarProdutosPaginaProduto, carregarDadosProdutoPesquisado } from "./modulos/carregar-exibicao.js";
 import { produtosExibicaoHome } from "./modulos/conteudos-produtos.js";
+import { URLPaginaErro } from "./modulos/utilitarios.js";
 
 (() => {
 
@@ -37,15 +38,13 @@ import { produtosExibicaoHome } from "./modulos/conteudos-produtos.js";
     }
 
     else{
-      
+      window.location.href = URLPaginaErro;
     }
     
   }
   
   else{
-    
+    window.location.href = URLPaginaErro;
   }
-
-
 
 })();

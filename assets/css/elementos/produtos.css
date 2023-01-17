@@ -39,6 +39,11 @@
   margin: 0.5rem 0;
 }
 
+.lista a{
+  outline: none;
+  box-shadow: none;
+}
+
 .lista__item__figura{
   margin: 0;
   padding: 0;
