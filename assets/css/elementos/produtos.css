@@ -1,9 +1,10 @@
 .produtos{
-  margin: 3rem var(--tamanho-margem-exibicao);
+  margin: auto;
 }
 
 .produtos__cabecalho{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -77,16 +78,16 @@
     flex-direction: column;
   }
 
+  .produtos__cabecalho__botao{
+    margin-top: 0.5rem;
+  }
+
   .lista{
     justify-content: center;
   }
 
   .lista__item:nth-child(2n + 0){
     display: none;
-  }
-
-  .produtos__cabecalho__botao{
-    margin-top: 0.5rem;
   }
 }
 
