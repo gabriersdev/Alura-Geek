@@ -49,26 +49,19 @@
 }
 
 .rodape__contato__descricao-input{
-  margin: 0.5rem 0;
-  display: inline;
+  /* Estilização no diretório de componentes */
 }
 
 .rodape__contato__input{  
-  width: 100%;
-  padding: 1rem 0.75rem;
-  border: none;
-  border-bottom: 3px solid #808080;
-  border-radius: 0.25rem 0.25rem 0 0;
-  margin-bottom: 0.5rem;
+  /* Estilização no diretório de componentes */
 }
 
 .rodape__contato__input:last-child{
-  margin-bottom: 0;
+  /* Estilização no diretório de componentes */
 }
 
 .rodape__contato__input:focus{
-  box-shadow: none;
-  border-color: var(--azul);
+  /* Estilização no diretório de componentes */
 }
 
 .rodape__contato__botao{

@@ -7,11 +7,13 @@
 @import url(modal.css);
 
 @import url(./componentes/botoes.css);
+@import url(./componentes/form-grupos.css);
 
 @import url(./elementos/menu.css);
 @import url(./elementos/logo.css);
 @import url(./elementos/cabecalho.css);
 @import url(./elementos/conteudo.css);
+@import url(./elementos/formulario.css);
 @import url(./elementos/produtos.css);
 
 @import url(./elementos/rodape.css);
@@ -39,7 +41,7 @@ body{
   margin: auto;
 }
 
-a{
+a, button{
   cursor: pointer;
 }
 

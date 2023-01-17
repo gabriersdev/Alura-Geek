@@ -23,6 +23,12 @@
   color: var(--preto-50);
 }
 
+.menu__form-group__input:focus,
+.menu__form-group__botao:focus{
+  outline: none;
+  box-shadow: none;
+}
+
 .menu__form-group__input, 
 .menu__form-group__botao{
   background-color: var(--cor-de-fundo);
@@ -33,7 +39,7 @@
   border-radius: 0 2rem 2rem 0;
   padding: 0.75rem 5%;
   padding-left: 0;
-  margin-left: -1px;
+  margin-left: -5px;
   color: var(--preto-50);
 }
 

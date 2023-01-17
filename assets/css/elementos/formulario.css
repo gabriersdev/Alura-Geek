@@ -1,0 +1,10 @@
+.formulario{
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.formulario__botao{
+  /* Estilização no diretório de componentes */
+}

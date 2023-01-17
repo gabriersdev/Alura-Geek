@@ -39,31 +39,18 @@
     
     <main class="conteudo">
       <div class="conteudo__grupo">
-        <h2 class="conteudo__titulo">Adicionar produto</h2>
+        <h2 class="conteudo__titulo">Iniciar sessão</h2>
       </div>
       
       <form action="" class="formulario">
-        <label for="nome" class="formulario__descricao-input">URL da imagem</label>
-        <input type="url" class="formulario__input" id="nome" placeholder="URL" required>
+        <label for="email" class="formulario__descricao-input">E-mail</label>
+        <input type="email" class="formulario__input" id="email" placeholder="Seu e-mail" required>
 
-        <label for="categoria" class="formulario__descricao-input">Categoria</label>
-        <select name="" id="" id="categoria" placeholder="Categoria" class="formulario__input" required>
-          <option value="">Selecione</option>
-          <option value="starWars">Star Wars</option>
-          <option value="console">Console</option>
-          <option value="diversos">Diversos</option>
-        </select>
-
-        <label for="nome" class="formulario__descricao-input">Nome do produto</label>
-        <input type="text" class="formulario__input" id="nome" placeholder="Nome do produto" required>
-
-        <label for="preco" class="formulario__descricao-input">Preço do produto</label>
-        <input type="" class="formulario__input" id="preco" placeholder="Preço do produto" required>
+        <label for="senha" class="formulario__descricao-input">Senha</label>
+        <input type="password" class="formulario__input" id="senha" placeholder="Sua senha" required>
+        <!-- <button data-formulario-senha><i class="bi bi-eye-fill"></i><i class="bi bi-eye-slash-fill"></i></button> -->
         
-        <label for="descricao" class="formulario__descricao-input">Descrição do produto</label>
-        <textarea name="" class="formulario__input" id="descricao" cols="20" rows="10" maxlength="200" placeholder="Descrição do produto" required></textarea>
-        
-        <button type="submit" class="formulario__botao">Adicionar produto</button>
+        <button type="submit" class="formulario__botao">Entrar</button>
       </form>
 
     </main>
@@ -141,5 +128,6 @@
   </noscript>
   
   <script type="module" src="./assets/js/scripts.js"></script>
+  <script type="module" src="./assets/js/login.js"></script>
 </body>
 </html>

@@ -21,15 +21,9 @@
 }
 
 .cabecalho__botao{
-  margin-top: 0.5rem;
-  background-color: var(--azul);
-  border: 1px solid var(--azulo);
-  color: var(--branco);
-  padding: 0.75rem 1.75rem;
-  cursor: pointer;
+  /* Estilização no diretório de componentes */
 }
 
 .cabecalho__botao:hover{
-  background-color: var(--azul-50);
-  border-color: var(--azul-50);
+  /* Estilização no diretório de componentes */
 }

@@ -1,0 +1,32 @@
+.rodape__contato__descricao-input{
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+
+.formulario__descricao-input{
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.rodape__contato__input,
+.formulario__input{  
+  width: 100%;
+  display: block;
+  padding: 1rem 0.75rem;
+  border: none;
+  border-bottom: 3px solid var(--preto-50);
+  border-radius: 0.25rem 0.25rem 0 0;
+  margin-bottom: 0.5rem;
+}
+
+.rodape__contato__input:last-child,
+.formulario__input:last-child{
+  margin-bottom: 0;
+}
+
+.rodape__contato__input:focus,
+.formulario__input:focus{
+  box-shadow: none;
+  border-color: var(--azul);
+}
