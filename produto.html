@@ -8,7 +8,7 @@
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com; img-src 'self'; font-src 'self' https://fonts.gstatic.com; script-src 'self';"> -->
   
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/modificadores/todos-produtos.css">
+  <link rel="stylesheet" href="./assets/css/modificadores/produto.css">
   
   <!-- Importação da Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   
-  <title>Todos os Produtos - Alura Geek</title>
+  <title>Produto</title>
 </head>
 <body>
   
@@ -34,17 +34,22 @@
         <button class="menu__form-group__botao"><i class="bi bi-search"></i></button>
       </form>
       
-      <a href="#" class="menu__botao">Login</a>
     </nav>
     
     <main class="conteudo">
-      <div class="conteudo__grupo">
-        <h2 class="conteudo__titulo">Todos os produtos</h2>
-        <a href="#" class="conteudo__botao">Adicionar produto</a>
-      </div>
 
+      <section class="produto__consultado" data-dados-produto>
+        <img src="./assets/img/produtos/1.png" alt="" class="produto__consultado__imagem">
+        <div class="produto__consultado__info">
+          <h1 class="produto__consultado__info__titulo">Produto XYZ</h1>
+          <span class="produto__consultado__valor">R$ 15,50</span>
+          <p class="produto__consultado__descricao">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quia quis minima incidunt dolores sequi facilis veniam explicabo quae necessitatibus. Nihil expedita iure quae non harum? Aperiam ex aut nam!
+          </p>
+        </div>
+      </section>
+      
       <section class="produtos">
-        
       </section>
     </main>
     
@@ -121,6 +126,6 @@
   </noscript>
   
   <script type="module" src="./assets/js/scripts.js"></script>
-  <script type="module" src="./assets/js/home.js"></script>
+  <script type="module" src="./assets/js/produto.js"></script>
 </body>
 </html>

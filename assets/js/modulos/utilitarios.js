@@ -20,6 +20,10 @@ const converterParaMesBRL = (numero) => {
   return mes;
 }
 
+const converterValor = (valor) => {
+  return valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+}
+
 const controlarModal = () => {
   const botaoModal = document.querySelectorAll('[data-direito-autorais]');
   botaoModal.forEach(botao => {
@@ -37,5 +41,6 @@ const controlarModal = () => {
 
 export{
   converterParaMesBRL,
-  controlarModal
+  controlarModal,
+  converterValor
 }

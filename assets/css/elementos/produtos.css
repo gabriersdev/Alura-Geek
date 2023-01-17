@@ -49,12 +49,12 @@
   max-width: 176px;
 }
 
-.lista__item__figura__descricao h5{
+.lista__item__figura__descricao h5{ /* Nome do Produto */
   font-size: 1rem;
   font-weight: normal;
 }
 
-.lista__item__figura__descricao span{
+.lista__item__figura__descricao span{ /* Valor */
   font-weight: 700;
 }
 

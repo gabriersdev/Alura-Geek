@@ -1,4 +1,6 @@
-const criarCardProdutosExibicaoHome = (dados) => {
+import { converterValor } from './utilitarios.js';
+
+const criarCardProdutosExibicaoHome = (dados, {categoriaURL, index}) => {
 
   const itemLista = document.createElement('li');
   itemLista.classList.add('lista__item');
@@ -19,14 +21,14 @@ const criarCardProdutosExibicaoHome = (dados) => {
   h5.textContent = dados.nomeProduto;
 
   const span = document.createElement('span');
-  span.textContent = (dados.valor).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+  span.textContent = converterValor(dados.valor);
 
   figurecaption.appendChild(h5);
   figurecaption.appendChild(span);
 
 
   const link = document.createElement('a');
-  link.href = '#';
+  link.href = `./produto.html?categoria=${categoriaURL}&id=${index}`;
   link.classList.add('lista__item__figura__botao');
   link.textContent = 'Ver produto';
 
@@ -39,11 +41,10 @@ const criarCardProdutosExibicaoHome = (dados) => {
   return itemLista;
 }
 
-const criarSecaoProdutosHome = (nomeSecao, cards) => {
+const criarSecaoProdutos = (nomeSecao, cards) => {
   
   const secao = document.createElement('section');
   secao.classList.add('produtos');
-
 
   const cabecalhoProdutos = document.createElement('div');
   cabecalhoProdutos.classList.add('produtos__cabecalho');
@@ -83,5 +84,5 @@ const criarSecaoProdutosHome = (nomeSecao, cards) => {
 
 export{
   criarCardProdutosExibicaoHome,
-  criarSecaoProdutosHome
+  criarSecaoProdutos
 }
