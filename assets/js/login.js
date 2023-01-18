@@ -18,6 +18,4 @@ import { tratarFormulario } from "./modulos/tratamento-formulario.js";
     evento.preventDefault();
   })
 
-  tratarFormulario();
-
 })();
