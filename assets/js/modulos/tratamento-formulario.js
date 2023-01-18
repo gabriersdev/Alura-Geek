@@ -1,5 +1,4 @@
-(() => {
-
+const tratarFormulario = () => {
   const inputs = document.querySelectorAll('[data-input]');
   inputs.forEach(input => {
     
@@ -21,6 +20,9 @@
       }
 
     })
-  })
+  });
+}
 
-})();
+export{
+  tratarFormulario
+}

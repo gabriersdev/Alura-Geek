@@ -1,3 +1,5 @@
+import { tratarFormulario } from "./modulos/tratamento-formulario.js";
+
 (() => {
   
   const btnControleSenha = document.querySelector('[data-formulario-senha]');
@@ -15,5 +17,7 @@
     input.focus();
     evento.preventDefault();
   })
+
+  tratarFormulario();
 
 })();

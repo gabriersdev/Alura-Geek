@@ -39,11 +39,23 @@ const controlarModal = () => {
   });
 }
 
+const mascararCamposMonetarios = (campo) => {
+  SimpleMaskMoney.setMask(campo, {
+    prefix: 'R$ ',
+    fixed: true,
+    fractionDigits: 2,
+    decimalSeparator: ',',
+    thousandsSeparator: '.',
+    cursor: 'end'
+  });
+}
+
 const URLPaginaErro = './erro.html';
 
 export{
   converterParaMesBRL,
   controlarModal,
   converterValor,
-  URLPaginaErro
+  URLPaginaErro,
+  mascararCamposMonetarios
 }
