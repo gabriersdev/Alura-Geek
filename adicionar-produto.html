@@ -37,7 +37,7 @@
       <a href="./login.html" class="menu__botao">Menu Administrador</a>
     </nav>
     
-    <main class="conteudo">
+    <main class="conteudo tamanho-reduzido">
       <div class="conteudo__grupo">
         <h2 class="conteudo__titulo">Adicionar produto</h2>
       </div>
@@ -51,10 +51,10 @@
 
       <form action="" class="formulario">
         <label for="nome" class="formulario__descricao-input">URL da imagem</label>
-        <input type="url" class="formulario__input" id="nome" placeholder="URL" required>
+        <input type="url" class="formulario__input" id="nome" data-input="URL" placeholder="URL" required>
 
         <label for="categoria" class="formulario__descricao-input">Categoria</label>
-        <select name="" id="" id="categoria" placeholder="Categoria" class="formulario__input" required>
+        <select name="" id="" id="categoria" placeholder="Categoria" data-input="categoria" class="formulario__input" required>
           <option value="">Selecione</option>
           <option value="starWars">Star Wars</option>
           <option value="console">Console</option>
@@ -62,13 +62,13 @@
         </select>
 
         <label for="nome" class="formulario__descricao-input">Nome do produto</label>
-        <input type="text" class="formulario__input" id="nome" placeholder="Nome do produto" required>
+        <input type="text" class="formulario__input" id="nome" data-input="nome" placeholder="Nome do produto" required>
 
         <label for="preco" class="formulario__descricao-input">Preço do produto</label>
-        <input type="" class="formulario__input" id="preco" placeholder="Preço do produto" required>
+        <input type="" class="formulario__input" id="preco" data-input="preco" placeholder="Preço do produto" required>
         
         <label for="descricao" class="formulario__descricao-input">Descrição do produto</label>
-        <textarea name="" class="formulario__input" id="descricao" cols="20" rows="10" maxlength="200" placeholder="Descrição do produto" required></textarea>
+        <textarea name="" class="formulario__input" id="descricao" data-input="descricao" cols="20" rows="10" maxlength="200" placeholder="Descrição do produto" required></textarea>
         
         <button type="submit" class="formulario__botao">Adicionar produto</button>
       </form>
@@ -148,5 +148,7 @@
   </noscript>
   
   <script type="module" src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/tratamento-formulario.js"></script>
+
 </body>
 </html>

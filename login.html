@@ -35,7 +35,7 @@
       </form>
     </nav>
     
-    <main class="conteudo">
+    <main class="conteudo tamanho-reduzido">
       <div class="conteudo__grupo">
         <h2 class="conteudo__titulo">Iniciar sessão</h2>
       </div>
@@ -49,11 +49,13 @@
 
       <form action="" class="formulario">
         <label for="email" class="formulario__descricao-input">E-mail</label>
-        <input type="email" class="formulario__input" id="email" placeholder="Seu e-mail" required>
+        <input type="email" class="formulario__input" id="email" data-input="email" placeholder="Seu e-mail" maxlength="60" required>
 
-        <label for="senha" class="formulario__descricao-input">Senha</label>
-        <input type="password" class="formulario__input" id="senha" placeholder="Sua senha" required>
-        <!-- <button data-formulario-senha><i class="bi bi-eye-fill"></i><i class="bi bi-eye-slash-fill"></i></button> -->
+        <div class="form__grupo">
+          <label for="senha" class="formulario__descricao-input">Senha</label>
+          <input type="password" class="formulario__input" id="senha" data-input="senha" placeholder="Sua senha" maxlength="20" required>
+          <button class="formulario__botao-input" data-formulario-senha><i class="bi bi-eye-fill"></i></button>
+        </div>
         
         <button type="submit" class="formulario__botao">Entrar</button>
       </form>
@@ -134,5 +136,6 @@
   
   <script type="module" src="./assets/js/scripts.js"></script>
   <script type="module" src="./assets/js/login.js"></script>
+  <script src="./assets/js/tratamento-formulario.js"></script>
 </body>
 </html>

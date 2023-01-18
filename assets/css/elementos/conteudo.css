@@ -2,6 +2,10 @@
   margin: 3rem var(--tamanho-margem-exibicao);
 }
 
+.conteudo.tamanho-reduzido{
+  margin: 3rem calc(var(--tamanho-margem-exibicao) * 3);
+}
+
 .conteudo__grupo{
   display: flex;
   align-items: center;
@@ -28,5 +32,17 @@
 
   .conteudo__botao{
     margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .conteudo.tamanho-reduzido{
+    margin: 3rem var(--tamanho-margem-exibicao);
+  }
+}
+
+@media screen and (min-width: 480px)  and (max-width: 768px) {
+  .conteudo.tamanho-reduzido{
+    margin: 3rem calc(var(--tamanho-margem-exibicao) * 2);
   }
 }
