@@ -45,30 +45,45 @@
       <div class="alert erro">
         <b class="alert__titulo">Atenção</b>
         <p class="alert__descricao">
-          Não é possível fazer login de fato no Alura Geek por enquanto. Esta página existe apenas para fim lúdico e de treinamento. Você pode testar os campos do formulário e ver o tratamento e a validação deles.
+          Não é possível adicionar um produto ao Alura Geek por enquanto. Esta página existe apenas para fim lúdico e de treinamento. Você pode testar os campos do formulário e ver o tratamento e a validação deles.
         </p>
       </div>
 
       <form action="" class="formulario">
-        <label for="nome" class="formulario__descricao-input">URL da imagem</label>
-        <input type="url" class="formulario__input" id="nome" data-input="URL" placeholder="URL" required>
+        <div class="form__grupo">
+          <label for="nome" class="formulario__descricao-input">URL da imagem</label>
+          <input type="url" class="formulario__input" id="nome" data-input="URL" placeholder="URL" required>
+          <span class="feedback-validacao none"></span>
+        </div>
 
-        <label for="categoria" class="formulario__descricao-input">Categoria</label>
-        <select name="" id="" id="categoria" placeholder="Categoria" data-input="categoria" class="formulario__input" required>
-          <option value="">Selecione</option>
-          <option value="starWars">Star Wars</option>
-          <option value="console">Console</option>
-          <option value="diversos">Diversos</option>
-        </select>
+        <div class="form__grupo">
+          <label for="categoria" class="formulario__descricao-input">Categoria</label>
+          <select name="" id="" id="categoria" placeholder="Categoria" data-input="categoria" class="formulario__input" required>
+            <option value="">Selecione</option>
+            <option value="starWars">Star Wars</option>
+            <option value="console">Console</option>
+            <option value="diversos">Diversos</option>
+          </select>
+          <span class="feedback-validacao none"></span>
+        </div>
 
-        <label for="nome" class="formulario__descricao-input">Nome do produto</label>
-        <input type="text" class="formulario__input" id="nome" data-input="nome" placeholder="Nome do produto" required>
+        <div class="form__grupo">
+          <label for="nome" class="formulario__descricao-input">Nome do produto</label>
+          <input type="text" class="formulario__input" id="nome" data-input="nome" placeholder="Nome do produto" required>
+          <span class="feedback-validacao none"></span>
+        </div>
 
-        <label for="preco" class="formulario__descricao-input">Preço do produto</label>
-        <input type="" class="formulario__input" id="preco" data-input="preco" placeholder="Preço do produto" required>
+        <div class="form__grupo">
+          <label for="preco" class="formulario__descricao-input">Preço do produto</label>
+          <input type="" class="formulario__input" id="preco" data-input="preco" placeholder="Preço do produto" required>
+          <span class="feedback-validacao none"></span>
+        </div>
         
-        <label for="descricao" class="formulario__descricao-input">Descrição do produto</label>
-        <textarea name="" class="formulario__input" id="descricao" data-input="descricao" cols="20" rows="10" maxlength="200" placeholder="Descrição do produto" required></textarea>
+        <div class="form__grupo">
+          <label for="descricao" class="formulario__descricao-input">Descrição do produto</label>
+          <textarea name="" class="formulario__input" id="descricao" data-input="descricao" cols="20" rows="10" maxlength="200" placeholder="Descrição do produto" required></textarea>
+          <span class="feedback-validacao none"></span>
+        </div>
         
         <button type="submit" class="formulario__botao">Adicionar produto</button>
       </form>
