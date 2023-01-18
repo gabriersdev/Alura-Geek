@@ -47,3 +47,14 @@ a, button{
 .link-visivel{
   text-decoration: underline;
 }
+
+.feedback-validacao{
+  margin-top: 0.5;
+  margin-bottom: 0.75rem;
+  color: var(--vermelho);
+  font-size: 1rem;
+}
+
+.none{
+  display: none;
+}

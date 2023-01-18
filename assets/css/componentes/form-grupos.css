@@ -21,6 +21,10 @@
   transition: 0.3s;
 }
 
+.formulario__input:invalid{
+  border-color: var(--vermelho);
+}
+
 select.formulario__input{
   appearance: none;
   -moz-appearance: none;

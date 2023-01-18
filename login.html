@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   
-  <title>Adicionar Produto - Alura Geek</title>
+  <title>Login - Alura Geek</title>
 </head>
 <body>
   
@@ -48,13 +48,19 @@
       </div>
 
       <form action="" class="formulario">
-        <label for="email" class="formulario__descricao-input">E-mail</label>
-        <input type="email" class="formulario__input" id="email" data-input="email" placeholder="Seu e-mail" maxlength="60" required>
+        <div class="form__grupo">
+          <label for="email" class="formulario__descricao-input">E-mail</label>
+          <input type="email" class="formulario__input" id="email" data-input="email" placeholder="Seu e-mail" maxlength="60" required>
+          <span class="feedback-validacao none"></span>
+        </div>
 
         <div class="form__grupo">
           <label for="senha" class="formulario__descricao-input">Senha</label>
-          <input type="password" class="formulario__input" id="senha" data-input="senha" placeholder="Sua senha" maxlength="20" required>
-          <button class="formulario__botao-input" data-formulario-senha><i class="bi bi-eye-fill"></i></button>
+          <div class="form__grupo__controle">
+            <input type="password" class="formulario__input" id="senha" data-input="senha" placeholder="Sua senha" maxlength="20" required>
+            <button class="formulario__botao-input" data-formulario-senha><i class="bi bi-eye-fill"></i></button>
+          </div>
+          <span class="feedback-validacao none"></span>
         </div>
         
         <button type="submit" class="formulario__botao">Entrar</button>
@@ -84,10 +90,10 @@
         <form action="" class="rodape__contato">
           <h5 class="rodape__contato__titulo">Fale conosco</h5>
           <label for="nome" class="rodape__contato__descricao-input">Nome</label>
-          <input type="text" class="rodape__contato__input" id="nome" placeholder="Nome" required>
+          <input type="text" class="rodape__contato__input" id="nome" placeholder="Nome" maxlength="20" required>
           
           <label for="mensagem" class="rodape__contato__descricao-input">Mensagem</label>
-          <input type="text" class="rodape__contato__input" id="mensagem" placeholder="Escreva sua mensagem" required>
+          <input type="text" class="rodape__contato__input" id="mensagem" placeholder="Escreva sua mensagem" maxlength="60" required>
           
           <button type="submit" class="rodape__contato__botao">Enviar mensagem</button>
         </form>
