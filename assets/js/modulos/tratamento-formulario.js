@@ -23,6 +23,19 @@ const tratarFormulario = () => {
   });
 }
 
+const confirmacaoFormulario = () => {
+  window.onbeforeunload = (evento) => {
+    const inputs = document.querySelectorAll('[data-input]');
+    
+    inputs.forEach(input => {
+      if(input.value != ''){
+        evento.returnValue = 'Tem certeza que deseja sair do site?';
+      }
+    })
+  }
+}
+
 export{
-  tratarFormulario
+  tratarFormulario,
+  confirmacaoFormulario
 }

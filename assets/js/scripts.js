@@ -1,5 +1,5 @@
 import { converterParaMesBRL, controlarModal } from "./modulos/utilitarios.js";
-import { tratarFormulario } from "./modulos/tratamento-formulario.js";
+import { tratarFormulario, confirmacaoFormulario } from "./modulos/tratamento-formulario.js";
 
 (() => 
 {
@@ -48,6 +48,7 @@ import { tratarFormulario } from "./modulos/tratamento-formulario.js";
   importarConteudo();
   controlarModal();
   tratarFormulario();
+  confirmacaoFormulario();
 
 })();
 
