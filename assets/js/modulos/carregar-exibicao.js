@@ -21,6 +21,10 @@ const carregarDadosProdutoPesquisado = (dadosProduto) => {
   secao.querySelector('span').textContent = converterValor(dadosProduto.valor);
 }
 
+const alterarTitleConsultaProduto = (dadosProduto) => {
+  document.title = `${dadosProduto.nomeProduto} - Alura Geek`; 
+}
+
 const carregar = (categoria, nome) => {
   const produtosCategoria = Array();
   categoria.forEach((produto, index) => {
@@ -34,5 +38,6 @@ const carregar = (categoria, nome) => {
 export{
   carregarProdutosHome,
   carregarProdutosPaginaProduto,
-  carregarDadosProdutoPesquisado
+  carregarDadosProdutoPesquisado,
+  alterarTitleConsultaProduto
 }

@@ -1,4 +1,4 @@
-import { carregarProdutosPaginaProduto, carregarDadosProdutoPesquisado } from "./modulos/carregar-exibicao.js";
+import { carregarProdutosPaginaProduto, carregarDadosProdutoPesquisado, alterarTitleConsultaProduto } from "./modulos/carregar-exibicao.js";
 import { produtosExibicaoHome } from "./modulos/conteudos-produtos.js";
 import { URLPaginaErro } from "./modulos/utilitarios.js";
 
@@ -35,6 +35,7 @@ import { URLPaginaErro } from "./modulos/utilitarios.js";
     if(ehValido){
       carregarProdutosPaginaProduto(categoria, nomeCategoria);
       carregarDadosProdutoPesquisado(dadosProduto);
+      alterarTitleConsultaProduto(dadosProduto);
     }
 
     else{
